@@ -68,11 +68,21 @@ h1{
 
 .main .content{
     position: absolute;
+    margin-left: 70px;
     left: 50px;
     top: 30%;
     font-size: 30px;   
 }
 
 .main .content .btn{
-    
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 30px;
+    background: yellow;
+    border-radius: 20px;
+    color: black;
+
+
+
 }
