@@ -14,7 +14,7 @@ h1{
 }
 
 .main {
-    background-image: url(./images/bg5.jpg);
+    background-image: url(./images/bg6.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -89,5 +89,41 @@ h1{
     background: yellow;
     border-radius: 20px;
     color: black;
+}
+
+.main .cryptocards1 {
+    position: absolute;
+    right: 10%;
+    bottom: 300px;
+    display: flex;
+    align-items: center;
+    border: gold;
+    border-radius: 10px;
+    opacity: 1;
+    color: white;
+}
+
+.main .cryptocards2 {
+    position: absolute;
+    right: 10%;
+    bottom: 180px;
+    display: flex;
+    align-items: center;
+    border: gold;
+    border-radius: 10px;
+    opacity: 1;
+    color: white;
+}
+
+.crypto{
+    color: Black;
+    display: flex;
+    margin: 0 20px;
+    font-size: 15px;
+    padding: 20px 30px;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
 }
 
