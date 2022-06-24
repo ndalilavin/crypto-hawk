@@ -13,7 +13,7 @@ async function getCoin(number_of_coins, page, id) {
     var doc = document.getElementById(id)
     doc.innerHTML = "<h2>Loading...please wait<h2>"
 
-        // Fetching data from the Coin gecko API and storig it in a function
+        // Fetching data from the Coin gecko API and storig it in a variable
         const data = await fetch( `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=${number_of_coins}&page=${page}&sparkline=false` , {
             "headers": {
                 "accept": "application/json, text/plain, */*",
@@ -33,6 +33,8 @@ async function getCoin(number_of_coins, page, id) {
             "credentials": "omit"
             }).then((k)=>k.json());
 
+
+            // Display fetched cryptocurrency data on homescreen
             const empty_list = []
             for(const d in data) {
                 var data1 = ` 
@@ -51,7 +53,27 @@ async function getCoin(number_of_coins, page, id) {
 
         }
 
+        //calls the function to display coins on the homepage
         getCoin(6,1, "coin-list-holder")
+
+
+        // Adding the like/favorite functionality
+function callEvent(event) {
+    event.classList.toggle("active")
+
+    const loc = localStorage.getItem("clicked")
+    if(loc !== null) {
+        const new_count = parseInt(loc) + 1
+        localStorage.setItem("clicked", new_count)
+    }else{
+        localStorage.setItem("clicked",1)
+    }
+
+    const loc2 = localStorage.getItem("clicked")
+    var d = document.getElementById("clicked")
+    d.innerHTML = `count clicked ${loc2}`
+}
+
 
 
 
