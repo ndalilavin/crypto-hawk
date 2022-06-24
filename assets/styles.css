@@ -107,27 +107,32 @@ h1{
 
 
 
-.main .cryptocards2 {
-    position: absolute;
-    right: 10%;
-    bottom: 180px;
-    display: flex;
-    align-items: center;
-    border: gold;
-    border-radius: 10px;
-    opacity: 1;
-    color: white;
+.main .coin-list h3{
+    color: red;
+    font-size: 20px;
 }
 
-.crypto{
-    color: Black;
+.coin-list1{
+    margin-top: 100px;
     display: flex;
-    margin: 0 20px;
-    font-size: 15px;
-    padding: 20px 30px;
+    flex-direction: row;
     align-items: center;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: white;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.main .coin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    margin: 0 15px;
+    color: #ff960b;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 8px;
+
+}
+
+
 
