@@ -37,7 +37,7 @@ async function getCoin(number_of_coins, page, id) {
             for(const d in data) {
                 var data1 = ` 
                 <div id="id1" onClick="callEvent(this)" class="coin ">
-                    <img src="${data[d].image}" >
+                    <img src="${data[d].image}" style="width:100px;" >
                     <div >
                         <h3 >$${data[d].current_price}</h3>
                         <p > ${data[d].name}</p>
