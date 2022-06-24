@@ -13,6 +13,7 @@ async function getCoin(number_of_coins, page, id) {
     var doc = document.getElementById(id)
     doc.innerHTML = "<h2>Loading...please wait<h2>"
 
+        // Fetching data from the Coin gecko API and storig it in a function
         const data = await fetch( `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=${number_of_coins}&page=${page}&sparkline=false` , {
             "headers": {
                 "accept": "application/json, text/plain, */*",
@@ -32,7 +33,21 @@ async function getCoin(number_of_coins, page, id) {
             "credentials": "omit"
             }).then((k)=>k.json());
 
+            const empty_list = []
+            for(const d in data) {
+                var data1 = ` 
+                <div id="id1" onClick="callEvent(this)" class="coin ">
+                    <img src="${data[d].image}" >
+                    <div >
+                        <h3 >$${data[d].current_price}</h3>
+                        <p > ${data[d].name}</p>
+                    </div>
+                </div>`
+
+                empty_list.push(data1)
+            } 
             
+            doc.innerHTML = empty_list;
 
         }
 
