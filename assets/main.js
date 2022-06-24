@@ -51,4 +51,6 @@ async function getCoin(number_of_coins, page, id) {
 
         }
 
+        getCoin(6,1, "coin-list-holder")
+
 
