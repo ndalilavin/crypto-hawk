@@ -36,7 +36,7 @@ As a user of the application,you will be able to: </br>
  * Access to internet
  ### Installation Process
  ****
-* Clone to thir repo : git clone https://github.com/ndalilavin/crypto-hawk.git
+* Clone to the repo : git clone https://github.com/ndalilavin/crypto-hawk.git
 * Open the directory in a text editor
 * Open the index file with any browser.</br>
     N/B: You will have to be connected to the internet for the API to work.
@@ -71,5 +71,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 [Go Back to the top](#)
 ## Authors Info
-LinkedIn Name - Vinson Ndalila
+LinkedIn Name - Vinson Ndalila </br>
 Email - vndalila@gmail.com / vinson.steve@student.moringaschool.com
