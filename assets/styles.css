@@ -116,7 +116,7 @@ h1{
 .main .coin-list1{
     position: absolute;
     background-color: black;
-    top: 600px;
+    top: 500px;
     margin-top: 40px;
     display: flex;
     flex-direction: row;

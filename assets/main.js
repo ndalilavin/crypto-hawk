@@ -63,7 +63,7 @@ function callEvent(event) {
 
     const loc2 = localStorage.getItem("clicked")
     var d = document.getElementById("clicked")
-    d.innerHTML = `count clicked ${loc2}`
+    d.innerHTML = `You have liked ${loc2} currencies`
 }
 
 

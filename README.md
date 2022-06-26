@@ -1,5 +1,5 @@
 # Phase 1 Project: Crypto Hawk.
- ## By: Vinson Ndalila
+ ## Author: Vinson SN.
 ## Screenshot
  ![image](./assets/images/cryptoHawk.png)
  ## Table of Content
@@ -71,5 +71,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 [Go Back to the top](#)
 ## Authors Info
-LinkedIn Name - Vinson Ndalila </br>
+LinkedIn Name - Vinson SN. </br>
 Email - vndalila@gmail.com / vinson.steve@student.moringaschool.com
